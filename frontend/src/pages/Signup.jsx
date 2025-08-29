@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import { handleError, handleSuccess } from "../utils/utils.js";
+import { SIGNUP_URL } from "../constants/apiEndPoints.js";
 
 function Signup() {
   const [signupInfo, setSignupInfo] = useState({
@@ -26,7 +27,7 @@ function Signup() {
       return handleError("name, username, email and password are required");
     }
     try {
-      const url = `http://localhost:8000/api/v1/users/register`;
+      const url = SIGNUP_URL;
       const response = await fetch(url, {
         method: "POST",
         headers: {
