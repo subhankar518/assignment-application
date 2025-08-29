@@ -1,6 +1,5 @@
 import { User } from "../models/user.model.js";
 import { asyncHandler } from "../utils/asyncHandler.js";
-import { ApiResponse } from "../utils/ApiResponse.js";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 

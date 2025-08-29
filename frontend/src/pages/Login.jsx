@@ -75,7 +75,7 @@ function Login() {
             onChange={handleChange}
             type="password"
             name="password"
-            placeholder="Enter your password..."
+            placeholder="Password..."
             value={loginInfo.password}
           />
         </div>
